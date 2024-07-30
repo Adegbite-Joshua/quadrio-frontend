@@ -15,7 +15,6 @@ const App = () => {
     return <div></div>;
   }
 
-  console.log(isAuthenticated);
   return (
     <Router>
       <Routes>
