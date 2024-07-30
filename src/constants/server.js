@@ -1,1 +1,1 @@
-export const serverEndpoint = "http://localhost:3333"
+export const serverEndpoint = "https://quadrio-backend.vercel.app"
