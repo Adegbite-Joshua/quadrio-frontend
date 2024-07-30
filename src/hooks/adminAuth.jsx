@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import Cookie from 'cookie-js';
+import Cookies from 'js-cookie';
 import { serverEndpoint } from '../constants/server';
 
 const useAuth = () => {
@@ -11,7 +11,7 @@ const useAuth = () => {
     const checkAuth = async () => {
       try {
         // Fetch the token from cookies
-        const token = Cookie.get('token');
+        const token = Cookies.get('token');
         
         // Make the request including the token in headers
         const response = await axios.get(`${serverEndpoint}/api/admin/details`, {
